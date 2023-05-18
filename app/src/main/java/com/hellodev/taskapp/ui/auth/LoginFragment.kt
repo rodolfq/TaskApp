@@ -33,7 +33,7 @@ class LoginFragment : Fragment() {
     private fun initiListiner() {
         binding.btnLogin.setOnClickListener {
             validateData()
-            //findNavController().navigate(R.id.action_global_homeFragment)
+
         }
 
         binding.btnRegister.setOnClickListener() {
@@ -50,7 +50,7 @@ class LoginFragment : Fragment() {
 
         if (email.isNotEmpty()) {
             if (password.isNotEmpty()) {
-                Toast.makeText(requireContext(), "Tudo certo!", Toast.LENGTH_SHORT).show()
+                findNavController().navigate(R.id.action_global_homeFragment)
 
             } else {
                 Toast.makeText(requireContext(), "Preencha sua senha", Toast.LENGTH_SHORT).show()
