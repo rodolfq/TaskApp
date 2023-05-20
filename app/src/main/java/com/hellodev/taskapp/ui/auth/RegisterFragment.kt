@@ -6,10 +6,10 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
-import androidx.navigation.fragment.findNavController
 import com.hellodev.taskapp.R
 import com.hellodev.taskapp.databinding.FragmentRegisterBinding
 import com.hellodev.taskapp.util.initToolbar
+import com.hellodev.taskapp.util.showBottomSheet
 
 
 class RegisterFragment : Fragment() {
@@ -43,14 +43,14 @@ class RegisterFragment : Fragment() {
 
         if (email.isNotEmpty()) {
             if (password.isNotEmpty()) {
-                Toast.makeText(requireContext(), "Tudo certo!", Toast.LENGTH_SHORT).show()
+               Toast.makeText(requireContext(),"Tudo certo",Toast.LENGTH_SHORT).show()
 
             } else {
-                Toast.makeText(requireContext(), "Preencha uma senha.", Toast.LENGTH_SHORT).show()
+                showBottomSheet(message = R.string.password_empty_register)
             }
 
         } else {
-            Toast.makeText(requireContext(), "Preencha um email válido.", Toast.LENGTH_SHORT).show()
+            showBottomSheet(message = R.string.email_empty_register)
         }
     }
 

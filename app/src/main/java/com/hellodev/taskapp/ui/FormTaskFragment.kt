@@ -10,6 +10,7 @@ import androidx.navigation.fragment.findNavController
 import com.hellodev.taskapp.R
 import com.hellodev.taskapp.databinding.FragmentFormTaskBinding
 import com.hellodev.taskapp.util.initToolbar
+import com.hellodev.taskapp.util.showBottomSheet
 
 class FormTaskFragment : Fragment() {
 
@@ -43,7 +44,7 @@ class FormTaskFragment : Fragment() {
         if (description.isNotEmpty()) {
             Toast.makeText(requireContext(), "Tudo certo!", Toast.LENGTH_SHORT).show()
         } else {
-            Toast.makeText(requireContext(), "Adicione uma descriçao.", Toast.LENGTH_SHORT).show()
+            showBottomSheet(message = R.string.description_empty_form_task_fragment)
         }
     }
 

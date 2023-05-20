@@ -29,38 +29,38 @@
             android:id="@+id/edtEmail"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@drawable/bg_edit_text"
-            android:padding="16dp"
             android:layout_marginTop="4dp"
+            android:background="@drawable/bg_edit_text"
             android:hint="Digite seu email"
-            android:inputType="textEmailAddress" />
+            android:inputType="textEmailAddress"
+            android:padding="16dp" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Senha"
             android:layout_marginTop="8dp"
+            android:text="Senha"
             android:textColor="@color/white" />
 
         <EditText
             android:id="@+id/edtPassword"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Digite sua senha"
             android:layout_marginTop="4dp"
             android:background="@drawable/bg_edit_text"
-            android:padding="16dp"
-            android:inputType="textPassword" />
+            android:hint="Digite sua senha"
+            android:inputType="textPassword"
+            android:padding="16dp" />
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/btnLogin"
             android:layout_width="match_parent"
-            android:layout_marginTop="18dp"
             android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
             android:background="@drawable/bg_btn"
-            app:backgroundTint="@null"
+            android:text="Login"
             android:textColor="@color/color_default"
-            android:text="Login" />
+            app:backgroundTint="@null" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -86,17 +86,16 @@
                 android:textColor="@color/white" />
 
         </LinearLayout>
-        
+
         <ProgressBar
             android:id="@+id/progressBar"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
+            android:indeterminateTint="@color/white"
             android:visibility="invisible"
-            tools:visibility="visible"
-            android:indeterminateTint="@color/white"/>
+            tools:visibility="visible" />
 
 
     </LinearLayout>
-
 </androidx.constraintlayout.widget.ConstraintLayout>

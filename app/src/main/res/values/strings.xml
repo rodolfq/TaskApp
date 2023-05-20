@@ -3,7 +3,18 @@
     <string name="status_task_todo">A fazer</string>
     <string name="status_task_doin">Fazendo</string>
     <string name="status_task_done">Feitas</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+<!--    Generic-->
+    <string name="text_title_warning">Atenção!</string>
+    <string name="text_button_warning">Entendi</string>
+    <string name="email_empty">Preencha seu e-mail</string>
+    <string name="password_empty">Preencha sua senha</string>
+
+<!--    Register fragment-->
+    <string name="email_empty_register">Preencha um e-mail válido.</string>
+    <string name="password_empty_register">Preencha uma senha.</string>
+
+    <!--    Form task fragment-->
+    <string name="description_empty_form_task_fragment">Preencha uma descrição.</string>
 
 </resources>
