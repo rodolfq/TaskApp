@@ -78,13 +78,11 @@
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/btnRegister"
+                style="@style/ButtonTheme"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="18dp"
-                android:background="@drawable/bg_btn"
-                android:text="Criar Conta"
-                android:textColor="@color/color_default"
-                app:backgroundTint="@null" />
+                android:text="Criar Conta" />
 
 
             <ProgressBar
