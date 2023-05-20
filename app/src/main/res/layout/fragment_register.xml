@@ -53,13 +53,12 @@
 
             <EditText
                 android:id="@+id/edtEmail"
+                style="@style/EditTextTheme"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="4dp"
-                android:background="@drawable/bg_edit_text"
                 android:hint="Digite seu email"
-                android:inputType="textEmailAddress"
-                android:padding="16dp" />
+                android:inputType="textEmailAddress" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -70,13 +69,12 @@
 
             <EditText
                 android:id="@+id/edtPassword"
+                style="@style/EditTextTheme"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="4dp"
-                android:background="@drawable/bg_edit_text"
                 android:hint="Digite sua senha"
-                android:inputType="textPassword"
-                android:padding="16dp" />
+                android:inputType="textPassword" />
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/btnRegister"

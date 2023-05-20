@@ -4,8 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:fillViewport="true"
     android:background="@drawable/gradient_background"
+    android:fillViewport="true"
     tools:context=".ui.FormTaskFragment">
 
     <LinearLayout
@@ -49,13 +49,12 @@
 
             <EditText
                 android:id="@+id/edtDescription"
+                style="@style/EditTextTheme"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
-                android:background="@drawable/bg_edit_text"
                 android:hint="Criar nova tela de login"
                 android:inputType="text"
-                android:padding="16dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/textView" />
@@ -84,8 +83,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="A fazer"
                     android:checked="true"
+                    android:text="A fazer"
                     android:textColor="@color/white"
                     app:buttonTint="@color/white" />
 
