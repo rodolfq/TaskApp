@@ -1,20 +1,44 @@
 <resources>
     <string name="app_name">TaskApp</string>
+
+    <!--    Status Task-->
     <string name="status_task_todo">A fazer</string>
     <string name="status_task_doin">Fazendo</string>
     <string name="status_task_done">Feitas</string>
 
-<!--    Generic-->
+
+    <!--    Generic-->
     <string name="text_title_warning">Atenção!</string>
     <string name="text_button_warning">Entendi</string>
     <string name="email_empty">Preencha seu e-mail</string>
+    <string name="email_text">E-mail</string>
+    <string name="hint_edit_email">Digite seu email</string>
     <string name="password_empty">Preencha sua senha</string>
+    <string name="password_text">Senha</string>
+    <string name="hint_edit_password">Digite sua senha</string>
 
-<!--    Register fragment-->
+    <!--    Login fragment-->
+    <string name="text_button_login">Login</string>
+    <string name="text_button_register_login">Criar Conta</string>
+    <string name="text_button_recover_login">Recuperar Conta</string>
+
+    <!--    Register fragment-->
     <string name="email_empty_register">Preencha um e-mail válido.</string>
     <string name="password_empty_register">Preencha uma senha.</string>
+    <string name="text_button_register">Criar conta</string>
+    <string name="text_title_toolbar_register">Criar conta</string>
+
+    <!--    Recover acount fragment-->
+    <string name="text_info_recover">Informe seu e-mail de cadastro para receber \n um link para alteração da sua senha</string>
+    <string name="text_title_toolbar_recover">Recuperar Conta</string>
+    <string name="text_button_recover">Enviar</string>
 
     <!--    Form task fragment-->
+    <string name="text_title_toolbar_task_fragment">Criar nova tarefa</string>
+    <string name="text_dresciption_toolbar_task_fragment">Descrição</string>
+    <string name="text_status_task_fragment">Status</string>
     <string name="description_empty_form_task_fragment">Preencha uma descrição.</string>
+    <string name="hint_edit_description_empty_form_task_fragment">Criar nova tela de login</string>
+    <string name="test_button_form_task_fragment">Salvar</string>
 
 </resources>

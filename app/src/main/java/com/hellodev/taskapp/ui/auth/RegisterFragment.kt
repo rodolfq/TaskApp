@@ -43,14 +43,14 @@ class RegisterFragment : Fragment() {
 
         if (email.isNotEmpty()) {
             if (password.isNotEmpty()) {
-               Toast.makeText(requireContext(),"Tudo certo",Toast.LENGTH_SHORT).show()
+                Toast.makeText(requireContext(), "Tudo certo", Toast.LENGTH_SHORT).show()
 
             } else {
-                showBottomSheet(message = R.string.password_empty_register)
+                showBottomSheet(message = getString(R.string.password_empty_register))
             }
 
         } else {
-            showBottomSheet(message = R.string.email_empty_register)
+            showBottomSheet(message = getString(R.string.email_empty_register))
         }
     }
 
